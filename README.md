@@ -9,7 +9,7 @@ This project is a Netflix clone built using React.js, designed to enhance skills
 
 ## Story Box Screenshot
 
-![Story Box](images/storybox.jpeg)
+(stories/storybox.jpeg)
 
 
 
