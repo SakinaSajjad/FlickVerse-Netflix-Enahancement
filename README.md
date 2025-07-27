@@ -8,7 +8,7 @@ This project is a Netflix clone built using React.js, designed to enhance skills
 ![PC screen](https://i.imgur.com/FLNs9Qy.jpg)
 
 ## Story Box Screenshot
-![Storybox](storybox.jpeg)
+![Storybox](src/images/storybox.jpeg)
 
 ### mobile experience 
 ![mobile screens](https://i.imgur.com/ForTeQi.jpg)
