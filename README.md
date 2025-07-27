@@ -10,10 +10,6 @@ This project is a Netflix clone built using React.js, designed to enhance skills
 ## Story Box Screenshot
 ![Storybox](storybox.jpeg)
 
-![Storybox](storybox.jpeg)
-
-
-
 ### mobile experience 
 ![mobile screens](https://i.imgur.com/ForTeQi.jpg)
 
