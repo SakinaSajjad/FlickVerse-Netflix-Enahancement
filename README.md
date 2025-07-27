@@ -7,10 +7,17 @@ This project is a Netflix clone built using React.js, designed to enhance skills
 
 ![PC screen](https://i.imgur.com/FLNs9Qy.jpg)
 
+## Story Box Screenshot
+![Storybox](storybox.jpeg)
+
+![Storybox](storybox.jpeg)
+
 
 
 ### mobile experience 
 ![mobile screens](https://i.imgur.com/ForTeQi.jpg)
+
+
  
 ## Key Functionalities
 - Sign In / Sign Up
@@ -21,6 +28,8 @@ This project is a Netflix clone built using React.js, designed to enhance skills
 - Profile Page
 - Play Movie Page
 - Search Movie Page
+- Upload Stories
+- posted a omment in comment box of the movie
 
 ## Technologies Used
 - [React.js](https://react.dev/)
