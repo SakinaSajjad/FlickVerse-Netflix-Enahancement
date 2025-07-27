@@ -13,6 +13,8 @@ This project is a Netflix clone built using React.js, designed to enhance skills
 ### mobile experience 
 ![mobile screens](https://i.imgur.com/ForTeQi.jpg)
 
+## Comment Box Screenshot
+![Comment Box](src/images/comments.jpeg)
 
  
 ## Key Functionalities
