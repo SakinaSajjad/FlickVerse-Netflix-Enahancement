@@ -21,6 +21,8 @@ This project is a Netflix clone built using React.js, designed to enhance skills
 - Profile Page
 - Play Movie Page
 - Search Movie Page
+- Upload Stories
+- posted a omment in comment box of the movie
 
 ## Technologies Used
 - [React.js](https://react.dev/)
