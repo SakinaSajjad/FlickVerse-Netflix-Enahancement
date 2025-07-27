@@ -115,7 +115,7 @@ function RowPost(props) {
             className="SwiperStyle"
           >
             {movies.map((obj, index) => {
-              const converted = convertGenere(obj.genre_ids);
+              // const converted = convertGenere(obj.genre_ids);
               return (
                 <SwiperSlide
                   className={props.islarge ? "large" : "bg-cover"}
@@ -281,14 +281,14 @@ function RowPost(props) {
                         />
                       </div>
 
-                      {converted &&
+                      {/* {converted &&
                         converted.map((genre) => {
                           return (
                             <span className="hidden text-white ml-4 font-thin text-xs lg:inline">
                               {genre}
                             </span>
                           );
-                        })}
+                        })} */}
                     </Fade>
                   </div>
                 </SwiperSlide>
@@ -461,7 +461,7 @@ function RowPost(props) {
 
                           <h1 className="flex text-neutral-400 text-sm leading-relaxed">
                             Genere :
-                            {convertGenere(moviePopupInfo.genre_ids).slice(0,2).map(
+                            {/* {convertGenere(moviePopupInfo.genre_ids).slice(0,2).map(
                               (genere) => {
                                 return (
                                   <span className="text-white ml-2 font-medium">
@@ -469,7 +469,7 @@ function RowPost(props) {
                                   </span>
                                 );
                               }
-                            )}
+                            )} */}
                           </h1>
                         </div>
                       </Fade>

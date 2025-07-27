@@ -18,6 +18,8 @@ import {
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../Firebase/FirebaseConfig";
 import { AuthContext } from "../Context/UserContext";
+import Stories from "../componets/Stories/Stories";
+import { getAuth } from "firebase/auth";
 
 function Home() {
   const { User } = useContext(AuthContext);
@@ -32,10 +34,19 @@ function Home() {
     });
   }, []);
 
+        const auth = getAuth();
+    
+    // Get the currently signed-in user
+    const userFirabase = auth.currentUser;
+  
+  
+   const  userId =  userFirabase.uid
+
   return (
     <div>
       <Banner url={trending}></Banner>
-      <div className="w-[99%] ml-1">
+      <Stories userId={userId}/>
+      <div className="w-[99%] ml-1 mt-40">
         <RowPost first title="Trending" url={trending} key={trending}></RowPost>
         <RowPost title="Animated" url={Animated} key={Animated}></RowPost>
         {watchedMovies.length != 0 ? (

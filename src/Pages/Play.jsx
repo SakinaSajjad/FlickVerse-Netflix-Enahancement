@@ -14,6 +14,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import usePlayMovie from "../CustomHooks/usePlayMovie";
 import useUpdateWatchedMovies from "../CustomHooks/useUpdateWatchedMovies";
+import CommentsSection from "../componets/CommentsSection/CommentsSection";
 
 function Play() {
   const [urlId, setUrlId] = useState("");
@@ -93,6 +94,9 @@ function Play() {
       });
   }, []);
 
+  console.log(movieDetails.id, 'movasdasdasdsadassajdashdjgkaskdas');
+
+
   return (
     <div>
       <Navbar playPage></Navbar>
@@ -119,9 +123,8 @@ function Play() {
           {/* Movie details Section  */}
           <section
             style={{
-              backgroundImage: `linear-gradient(90deg, #000000f0 0%, #000000e6 35%, #000000c3 100%), url(${
-                imageUrl + movieDetails.backdrop_path
-              })`,
+              backgroundImage: `linear-gradient(90deg, #000000f0 0%, #000000e6 35%, #000000c3 100%), url(${imageUrl + movieDetails.backdrop_path
+                })`,
             }}
             className="bg-cover bg-center object-contain flex flex-col p-5 sm:p-14 lg:flex-row lg:items-center lg:justify-center lg:gap-8 2xl:py-24"
           >
@@ -349,21 +352,20 @@ function Play() {
               <img
                 src={
                   movieDetails.poster_path &&
-                  `${
-                    imageUrl +
-                    (window.innerWidth > 1024
+                  `${imageUrl +
+                  (window.innerWidth > 1024
+                    ? movieDetails.backdrop_path
                       ? movieDetails.backdrop_path
-                        ? movieDetails.backdrop_path
-                        : "https://i.ytimg.com/vi/Mwf--eGs05U/maxresdefault.jpg"
-                      : movieDetails.poster_path)
+                      : "https://i.ytimg.com/vi/Mwf--eGs05U/maxresdefault.jpg"
+                    : movieDetails.poster_path)
                   }`
                 }
                 className="w-40 rounded-sm lg:w-[45rem] ml-4 lg:ml-0"
-                alt=<img src="https://i.ytimg.com/vi/Mwf--eGs05U/maxresdefault.jpg" />
+              // alt=<img src="https://i.ytimg.com/vi/Mwf--eGs05U/maxresdefault.jpg" />
               />
             </div>
           </section>
-
+          <CommentsSection movieId={movieDetails?.id} />
           {/* Similar movies section */}
           {similarMovies.length !== 0 && (
             <section>
